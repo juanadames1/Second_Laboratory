@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Redes LAN</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="https://www.unisabana.edu.co" target="blank" class="logo nav-link"><img src="assets/images/Unisabana.png" class="logo-nav-image"></a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="contact.html" target="blank" class="nav-menu-link nav-link"> Integrantes </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="text-box">
+        <center>
+            <p><b>Diagnóstico de funcionamiento de una Red LAN empleando Comandos de Red TCP/IP</b></p>
+            <br>
+        </center>
+        <blockquote>
+            <p>Con el ánimo de familiarizarse con los comandos de red TCP/IP, hemos llevado a cabo este segundo laboratorio, en cual investigamos y reconocimos los diferentes tipos de comandos de red más utilizados tanto en sistemas operativos Windows, como
+                en Kernels como Linux (cualquier distribución), además de que obtuvimos ciertos resultados particulares que dieron pie a una serie de conclusiones como que, la destreza en el uso de comandos de red debe ser usaba con precaución y con mucho
+                conocimiento, puesto que brindan información interna de los protocolos de red que está usando el router o AP presentes en el entorno.
+            </p>
+            <br>
+            <center><img src="assets/images/cyberspace-2784907_1920.jpg" class="image-pos-brief">
+                <p id="image-foot-1">Imágen tomada de Pixabay.com, licencia CC:BY</p>
+            </center>
+            <br>
+            <h2>Procedimiento - parte 1</h2>
+            <p>Hoy en día en el mundo de la informática y de las telecomunicaciones se tienen presentes una serie de comandos TCP/IP muy comunes por consola como lo son; "ipconfig", "ipconfig /all", "ping", "tracert", "pathping", "telnet", "net","route",
+                "arp", "nbtstat", "netsh", "getmac", entre otros.</p>
+            <p>Ahora debemos conocer cuál es la función de cada uno de esos comandos, para así garantizar el conocimiento del lector:</p>
+            <br>
+            <p>1. Ipconfig: Es un comando usado en Sistemas Operativos Windows, el cual tiene como objetivo mostrar por pantalla la configuración de red que está usando el ordenador en el momento, es decir determina la configuración del host (Buchanan, 2004).</p>
+            <br>
+            <p>2. Ipconfig /all: Al igual que en el comando Ipconfig, en este caso debemos tener presente la terminación "/all", dado que esta permite expandir la información de la red del equipo, dejando visibles aspectos como, el DNS, la IPv6, la dirección
+                física MAC, entre otros.</p>
+            <br>
+            <p>3. Ping: Facilita realizar diagnósticos a un host local o remoto, el cual tiene como objetivo verificar el estado de un dispositivo interconectado (20 comandos de red más importantes en Windows, 2020).</p>
+            <br>
+            <p>4. Tracert: Es una herramienta de diagnóstico de red que determina una ruta especifíca a un destino mediante el envío de solicitudes eco del protocolo ICMP (Trabelsi et Al, 2006).</p>
+            <br>
+            <p>5. Pathping: Este comando proporciona información sobre la latencia de red y la pérdida en saltos intermedios entre un origen y un destino (20 comandos de red más importantes en Windows, 2020).</p>
+            <br>
+            <p>6. Telnet:Permite el control remoto de los ordenadores por medio de entradas y salidas basadas en texto. Con este objetivo, se crea una conexión cliente-servidor a través del protocolo TCP y del puerto 23, donde el dispositivo controlado ejerce
+                de servidor y espera a los comandos pertinentes (Davidson, et Al, 1977).</p>
+            <br>
+            <p>7. Net: Se usa para establecer la configuración de directiva en el equipo local, como directivas de cuenta y directivas de contraseña. Este comando no se puede usar en el controlador de dominio. Este comando solo se usa en el equipo local
+                (Deland-Han, 2021). </p>
+            <br>
+            <p>8. Route: Telnet permite el control remoto de los ordenadores por medio de entradas y salidas basadas en texto (20 comandos de red más importantes en Windows, 2020).</p>
+            <br>
+            <p>9. ARP: Muestra y modifica las tablas de conversión de direcciones IP en direcciones físicas que utiliza el protocolo de resolución de direcciones ARP (20 comandos de red más importantes en Windows, 2020). </p>
+            <br>
+            <p>10. Nbstat: Muestra las estadísticas del protocolo NetBIOS sobre TCP/IP (NetBT), las tablas de nombres NetBIOS del equipo local y de los equipos remotos, y la caché de nombres NetBIOS. Este comando también permite actualizar la caché de nombres
+                NetBIOS y los nombres registrados en el Servicio de nombres de Internet de Windows (WINS) (JasonGerend, 2021).</p>
+            <br>
+            <p>11. Netsh: Entre las principales opciones que se pueden realizar, están la posibilidad de ver, modificar, administrar y diagnosticar la configuración de una red (Raut, 2020) </p>
+            <br>
+            <p>12. Getmac: Cómo su nombre indica, este comando muestra por pantalla la dirección física o MAC de la tarjeta de red del dispositivo que se esté consultando. </p>
+            <br>
+            <h2>Procedimiento - parte 1.2 - Profundización</h2>
+            <br>
+            <p>En esta sección vamos a profundizar temas adicionales a la investigación anteriormente realizada, con el fin de ir más allá de lo solicitado ampliando el aprendizaje base, para esto veremos lo siguiente: </p>
+            <br>
+            <p>1.2.1. NetBIOS: Es una API que pueden utilizar los programas en una LAN. En definitiva, se trata de un protocolo que, situado por encima de otro de más bajo nivel, permite establecer sesiones entre diferentes equipos (Glosario informático
+                - Definición de términos informáticos, 2022).</p>
+            <br>
+            <p>1.2.2. Protocolo ICMP: Internet Control Message Protocol o Protocolo de Mensajes de Control de Internet, es considerado como parte de la capa de red IP, es un protocolo empleado por los routers y por los hosts para comunicar la información
+                de control o de error de la red (Segui, 2012). </p>
+            <br>
+            <p>1.2.3. WINS: Windows Internet Naming Service (WINS) es un servidor de nombres de Microsoft para NetBIOS, que mantiene una tabla con la correspondencia entre direcciones IP y nombres NetBIOS de ordenadores. Esta lista permite localizar rápidamente
+                a otro ordenador de la red (JasonGerend, 2022).</p>
+            <br>
+            <h2>Procedimiento - Parte 2</h2>
+            <br>
+            <p>Dados en este punto, responderemos una serie de preguntas clave planteadas por el docente para la resolución de este segundo laboratorio de redes, el cual nos dará como resultado, la evidencia de la concreción del tema previsto para evaluar.</p>
+            <br>
+            <p>A. Un administrador de red digita el comando de red mostrado en la Figura 1. ¿Qué significa la dirección de red que se encuentra entre los corchetes?</p>
+            <br>
+            <center>
+                <img src="assets/images/Figure 1.png" class="image-figure1">
+            </center>
+            <br>
+            <p>La dirección de red que se encuentra en los corchetes, es la dirección IP (Internet Protocol Address), la cual en este caso está siendo diagnósticada mediante el comando "ping", para evaluar el host remoto. </p>
+            <br>
+            <p>B. Un administrador de red digita el comando de red mostrado en la Figura 2. ¿Qué quiere decir Tiempo de espera agotado para esta solicitud?</p>
+            <br>
+            <center>
+                <img src="assets/images/Figure 2.png" class="image-figure1">
+            </center>
+            <br>
+            <p>La respuesta "Tiempo de espera agotado para esta solicitud" significa que no se obtuvo ninguna respuesta al comando ping durante el período de tiempo predeterminado (1 segundo) (Tomás Ramírez González, 2016).</p>
+            <br>
+            <p>C. Un administrador de red digita el comando de red mostrado en la Figura 3. Explique el significado de: (1) bytes=32, (2) tiempo=7ms, y (3) TTL=64.</p>
+            <br>
+            <center>
+                <img src="assets/images/Figure 3.png" class="image-figure1">
+            </center>
+            <br>
+            <p>En este caso desglosaremos la respuesta parte por parte, tenemos que al ejecutar el comando "ping" en la consola de Windows, esta nos mostrará el mensaje de (en este caso), "Haciendo Ping a 192.168.1.2 con 32 bytes de datos: Respuesta desde
+                192.168.1.2: bytes 32 tiempo: 7ms TTL=64..." así hasta que la prueba termine su proceso de monitoreo de la red, pero ahora, ¿qué significa esto?. Bien, como bien sabemos, el comando ping testea o hace un diagnóstico a un host local o remoto,
+                por ende se subentiende que lo primero que tenemos que conocer sí o sí, es la dirección IP a la que le vamos a hacer el monitoreo, en este caso se representa como: 192.168.1.2, luego de eso tenemos un valor importante que son los bytes
+                de la red, en este caso son 32 bytes, esto hace referencia a la dirección IP puesto que esta dirección es un número de 32 Bytes EN IPv4 que debe ser único para cada servidor o computador presente en la red, además de que tenemos presente
+                el tiempo en milisegundos (ms), el cual determina qué tantos X de milisegundos ha tardado la información en viajar del servidor al computador y viceversa, por lo cual nos sobra identificar el "TTL" (más visto en el ámbito personal como
+                una "latencia"), esta sigla hace referencia al tiempo de vida del paquete enviado, donde su valor óptimo es 128, pero este puede oscilar.
+            </p>
+            <br>
+            <p>Para concluir veremos una pequeña "estructura": Haciendo ping a <b>dirección_ip</b> con 32 bytes de datos:</p>
+            <p>Respuesta desde <b>192.168.1.2</b>(IP) <b>bytes=32</b>(Número de bytes en IPv4) <b>tiempo=7ms</b>(Tiempo que tarda el paquete en ir al servidor y volver al computador y viceversa) <b>TTL=64</b>(Tiempo de vida del paquete envíado).</p>
+            <br>
+            <p>D. Un administrador de red digita el comando de red mostrado en la Figura 4. ¿Qué direcciones IP y físicas se muestran en la figura? ¿Qué significa direccionamiento dinámico?</p>
+            <br>
+            <center>
+                <img src="assets/images/Figure 4.png" class="image-figure1">
+            </center>
+            <br>
+            <p>Las direcciones que se muestran en pantalla son las direcciones IP y MAC correspondientes a cada computador conectado en la red, recordemos que el protocolo ARP tiene como finalidad de permitir que un dispositivo conectado a una red pueda
+                obtener una ruta MAC de otro equipo que está conectado a la misma red, esto mediante la vinculación de una dirección MAC con una dirección IP, así que según está lógica, este comando está brindando la información de la dirección MAC de
+                la tarjeta de red del ordenador y de la dirección IP con la que el protocolo ARP la está vinculando, ahora ¿qué significa el estado dinámico?, significa que estamos hablando directamente del protocolo DHCP, el cual nos permite fijar una
+                IP que le servirá al equipo para poder navegar en internet.
+            </p>
+            <br>
+            <p>E. Un administrador de red digita el comando de red mostrado en la Figura 5. Explique los términos Destino de red, Máscara de red, Puerta de acceso, Interfaz, Métrica.</p>
+            <br>
+            <center>
+                <img src="assets/images/Figure 5.png" class="image-figure1">
+            </center>
+            <br>
+            <p>Como sabemos ya, el comando netstat tiene como finalidad, mostrar por pantalla un listado de todas las conexiones de red que nuestra máquina ha realizado, pero ahora ¿cómo lo podemos identificar?. Partamos de explicar el destino de la red,
+                que como su nombre indica, es solamente la dirección IP de destino, IP donde puede estár alojada alguna información, etcétera, por consiguiente tenemos a la máscara de subred, que para términos coloquiales cumple la función de decirle
+                al ordenador a qué red pertenece y en qué red está trabajando, pero para fines más profesionales, la máscara de subred indica al sistema cuál es el esquema de particionamiento de subred. Esta máscara de bits está formada por la parte de
+                la dirección de red y la parte de la dirección de subred de la dirección Internet. Por otro lado y para finalizar, tenemos a la puerta de acceso, a la interfaz y a la métrica, donde la puerta de acceso es la dirección IP que el switch
+                o router brinda al ordenador, la interfaz es la dirección IP pública que está usando el ordenador para navegar y la métrica es el costo asociado al uso de esa ruta, es decir, es un protocolo de enrutamiento.
+            </p>
+            <br>
+            <p>F. Un administrador de red digita el comando de red mostrado en la Figura 6. ¿Para qué sirve esa información? ¿Realiza la misma función de netstat –p TCP?</p>
+            <br>
+            <center>
+                <img src="assets/images/Figure 6.png" class="image-figure2">
+            </center>
+            <br>
+            <p>La información presentada por pantalla tiene como finalidad informar al experto en redes, el listado de conexiones que nuestra máquina ha realizado, en este caso, mostrando la dirección Local y remota respectivamente, esta tiene la misma función
+                que el comando netstat -p TCP, tal cual como se muestra a continuación:</p>
+            <br>
+            <center>
+                <img src="assets/images/Figure 6,1.png" class="image-figure1">
+            </center>
+            <br>
+            <p>G. Un administrador de red digita el comando de red mostrado en la Figura 7. ¿Qué significa Traza? ¿Qué indica el número de saltos? ¿Qué significa el "
+                < "1 ms en cada salto? ¿Para qué se realiza una Traza?¿En qué momento es útil utilizar el comando Tracert? </p>
+            <br>
+            <center>
+                <img src="assets/images/Figure 7.png " class="image-figure1 ">
+            </center>
+            <br>
+            <p>Una traza es un protocolo que tiene como objetivo enviar mensajes de información operativa o errores que puedan surgir en el camino de los datos desde el ordenador hasta la internet, además de que el número de saltos indica el número de dispositivos de 
+                red intermedios por los que pasan los datos entre la fuente y el destino, por otro lado, el "< "1ms en cada salto refiere directamente al tiempo que tarda en pasar la información por cada dispositivo de red, donde ahora queda preguntarnos, ¿para qué una traza?,
+            bien, esto con el fin de llevar a cabo el paso de información entre capas de comunicación, donde ahora sí tiene sentido usar el comando tracert, esto con el fin de evaluar la calidad de la red.</p>
+            <br>
+            <h2>Procedimiento - Finalizando Parte 2.1</h2>
+            <br>
+            <p> En está nueva sección veremos muy brevemente cuales son los comandos de red más usados en Linux (cualquier distribución):</p>
+            <br>
+            <p>1. Comando sudo: Abreviatura de «SuperUser Do» (SuperUsuario hace), este comando te permite realizar tareas que requieren permisos administrativos o raíz. Sin embargo, no es aconsejable usar este comando para el uso diario, ya que podría ser fácil que ocurra un error si haces algo mal (Deyimar A, 2017). </p>
+            <br>
+            <p>2. Comando ping: Usa el comando ping para verificar tu estado de conectividad a un servidor. Por ejemplo, simplemente ingresando ping google.com, el comando verificará si puedes conectarte a Google y también medirá el tiempo de respuesta (Deyimar A, 2017).</p>
+            <br>
+            <p>3. Comando Useradd, userdel: Dado que Linux es un sistema multiusuario, esto significa que más de una persona puede interactuar con el mismo sistema al mismo tiempo. useradd se usa para crear un nuevo usuario, mientras que passwd agrega una contraseña a la cuenta de ese usuario. Para agregar una nueva persona llamada John, escribe useradd John y luego para agregar su contraseña, escribe passwd 123456789 (Deyimar A, 2017).</p>
+            <br>
+            <h2>Conclusión</h2>
+            <br>
+            <p>El conocimiento en redes, hace que las personas vean más allá de un computador accediendo a la internet, además de que abre un montón de posibilidades al uso de las mismas, por eso es importante conocer los conceptos básicos, para así estár blindados a un ataque de redes, puesto que este conocimiento genera la posibilidad de hacer un bien o un mal a una persona o compañía,
+                por eso, empezar con los comandos básicos para Windows como para Linux es de vital importancia para empezar con el aseguramiento de nuestras redes, y así poder evaluar su rendimiento, calidad y seguridad, seguiremos trabajando con el constante aprendizaje en el campo, 
+                previendo un gran impacto a la sociedad para el futuro con los nuevos protocolos de transmisión de datos que se avecinan, esperamos que los comandos de red nos sirvan para comprender un poco más conceptualmente lo que nos rodea día a día, que todo tiene un punto A y un punto B,
+                que debe ser respetado, porque aunque no lo veamos, las redes están presentes todos los días de nuestras vidas, apoyando a nuestro desarrollo como humanidad.
+            </p>
+                    <br>
+                    <center>
+                        <h2>Referencias</h2>
+                    </center>
+                    <p>1. Buchanan, W. J. (2004). IPCONFIG Command and Host. In The Handbook of Data Communications and Networks (pp. 1337-1339). Springer, Boston, MA. </p>
+                    <br>
+                    <p>2. 20 comandos de red más importantes en Windows. (2020, November 2). OpenWebinars.net. https://openwebinars.net/blog/20-comandos-de-red-mas-importantes-en-windows/</p>
+                    <br>
+                    <p>3. Trabelsi, Z., El-Sayed, H., Frikha, L., & Rabie, T. (2006, October). Traceroute based IP channel for sending hidden short messages. In International Workshop on Security (pp. 421-436). Springer, Berlin, Heidelberg.</p>
+                    <br>
+                    <p>4. Davidson, J., Hathaway, W., Postel, J., Mimno, N., Thomas, R., & Walden, D. (1977, September). The arpanet telnet protocol: Its purpose, principles, implementation, and impact on host operating system design. In Proceedings of the
+                        fifth symposium on Data communications (pp. 4-10).</p>
+                    <br>
+                    <p>5. Deland-Han. (2021, September 24). Comandos de red para sistemas operativos - Windows Server. Microsoft.com. https://docs.microsoft.com/es-es/troubleshoot/windows-server/networking/net-commands-on-operating-systems/.</p>
+                    <br>
+                    <p>6. JasonGerend. (2021, July 29). nbtstat. Microsoft.com. https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nbtstat ‌</p>
+                    <br>
+                    <p>7. Raut, J. T., Sharma, Y. K., & Patil, V. COMPARATIVE ANALYSIS OF DIFFERENT SECURITY TOOLS TO DETECT NETWORK RISKS, 2020.</p>
+                    <br>
+                    <p>8. Glosario informático - Definición de términos informáticos. (2022). Glosarioit.com. https://www.glosarioit.com/NetBIOS</p>
+                    <br>
+                    <p>9. Segui, B. (2012). Funcionalidades del protocolo ICMP. Riunet.upv.es. https://doi.org/http://hdl.handle.net/10251/16655</p>
+                    <br>
+                    <p>10. JasonGerend. (2022, March 7). Servicio de nombres Internet de Windows (WINS). Microsoft.com. https://docs.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top ‌</p>
+                    <br>
+                    <p>11. Tomás Ramírez González. (2016, May 21). ¿Qué es el comando Ping y cómo funciona? ComputerHoy; ComputerHoy. https://computerhoy.com/noticias/internet/que-es-comando-ping-como-funciona-42607</p>
+                    <br>
+                    <p>12. Deyimar A. (2017, April 18). 34 comandos básicos de Linux que todo usuario debe saber. Tutoriales Hostinger; Tutoriales Hostinger. https://www.hostinger.es/tutoriales/linux-comandos</p>
+        </blockquote>
+
+    </div>
+</body>
+
+<footer class="foot-page ">
+    <center>
+        <br>
+        <p>Página desarrollada por el equipo</p>
+        <br>
+    </center>
+</footer>
+
+</html>
